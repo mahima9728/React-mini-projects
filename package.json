@@ -1,9 +1,12 @@
 {
-  "name": "portfolio-page",
+  "homepage": "https://mahima9728.github.io/React-mini-projects", 
+ "name": "portfolio-page",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist", 
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

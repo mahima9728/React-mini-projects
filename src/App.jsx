@@ -5,17 +5,18 @@ import ColorPicker from './ColorPicker';
 import DigitalClock from "./DigitalClock";
 import StopWatch from "./StopWatch";
 
-
 function App() {
   return (
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/color-picker" element={<ColorPicker />} />
-        <Route path="/digital-watch" element={<DigitalClock />} />
-        <Route path="stopwatch" element={<StopWatch/> } />
-        </Routes>
-      </div>
+      <Router basename="/React-mini-projects">
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/color-picker" element={<ColorPicker />} />
+            <Route path="/digital-watch" element={<DigitalClock />} />
+            <Route path="/stopwatch" element={<StopWatch />} />
+          </Routes>
+        </div>
+      </Router>
   );
 }
 
