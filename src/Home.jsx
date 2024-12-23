@@ -15,7 +15,7 @@ const Home = () => {
             <button className="btn">Show me</button>
           </Link>
         </div>
-        <div className="card">
+        {/* <div className="card">
           <img src={profilepic} alt="image" className="img-card" />
           <h1 className="project-heading">Stopwatch React Project</h1>
           <p className="project-description">Start and stop a timer with a reset option.</p>
@@ -29,8 +29,8 @@ const Home = () => {
           <p className="project-description">Description about the project</p>
           <Link to="/digital-watch">
             <button className="btn">Show me</button>
-          </Link>
-        </div>
+          </Link> */}
+        {/* </div> */}
       </div>
     </>
   );
