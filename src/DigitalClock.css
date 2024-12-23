@@ -1,0 +1,23 @@
+body {
+  transition: background-color 1s ease-in-out;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 0;
+  transition: background-color 1s ease-in-out;
+}
+.clock{
+  color: black;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+
+
+}

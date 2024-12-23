@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import '/home/mahima/Desktop/Full Stack/React1/My-app/src/DigitalClock .css'
+import './DigitalClock.css'
 
 
 const DigitalClock = () => {
 
   const [time, setTime] = useState(new Date());
+   const [bgColor, setBgColor] = useState('rgb(228, 72, 72)'); 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -32,10 +33,20 @@ const DigitalClock = () => {
     return (number < 10 ? '0' : '') + number; 
     
   }
+  useEffect(() => {
+    const currentHour = time.getHours();
+    if (currentHour >= 6 && currentHour < 12) {
+      setBgColor('rgb(255, 223, 186)'); // Morning light color
+    } else if (currentHour >= 12 && currentHour < 18) {
+      setBgColor('rgb(122, 193, 238)'); // Afternoon color
+    } else {
+      setBgColor('rgb(34, 34, 34)'); // Night color
+    }
+  }, [time]);
   
 
   return (
-    <div className='clock-container'>
+    <div className='clock-container' style={{ backgroundColor: bgColor }}>
       <div className='clock'>
         <span>{formateTime() }</span>
 

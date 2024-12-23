@@ -7,14 +7,13 @@ import StopWatch from "./StopWatch";
 
 function App() {
   return (
+
       <div>
-        {/* Navigation links */}
-        <nav>
-          <Link to="/">Home</Link>
+          {/* <Link to="/">Home</Link>
           <Link to="/color-picker">Color Picker</Link>
           <Link to="/digital-watch">Digital Clock</Link>
-          <Link to="/stopwatch">Stopwatch</Link>
-        </nav>
+          <Link to="/stopwatch">Stopwatch</Link> */}
+        
 
         {/* Routes */}
         <Routes>
@@ -25,6 +24,7 @@ function App() {
           <Route path="*" element={<Home />} /> {/* Catch-all route */}
         </Routes>
       </div>
+      
   );
 }
 

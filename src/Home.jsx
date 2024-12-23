@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <>
       <div className="cards-container">
-        {/* Color Picker Card */}
         <div className="card">
           <img src={profilepic} alt="Color Picker" className="img-card" />
           <h1 className="project-heading">Color Picker React Project</h1>
@@ -17,7 +16,6 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Stopwatch Card */}
         <div className="card">
           <img src={profilepic} alt="Stopwatch" className="img-card" />
           <h1 className="project-heading">Stopwatch React Project</h1>
@@ -26,7 +24,7 @@ const Home = () => {
             <button className="btn">Show me</button>
           </Link>
         </div>
-        {/* Digital Watch Card */}
+        
         <div className="card">
           <img src={profilepic} alt="Digital Watch" className="img-card" />
           <h1 className="project-heading">Digital Watch React Project</h1>
