@@ -5,7 +5,7 @@ import './DigitalClock.css'
 const DigitalClock = () => {
 
   const [time, setTime] = useState(new Date());
-   const [bgColor, setBgColor] = useState('rgb(228, 72, 72)'); 
+   const [bgColor, setBgColor] = useState('rgb(255, 255, 255)'); 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
